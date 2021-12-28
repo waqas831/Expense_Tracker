@@ -5,7 +5,7 @@ url="mongodb+srv://waqas:waqas123@cluster0.updqp.mongodb.net/expense-trackle?ret
 const db=mongoose.connect(url,{useNewUrlParser:true,useUnifiedTopology:true}).then((res)=>{
     console.log("connected to db");
 }).catch((err)=>{
-    console.log("not connected to db");
+    console.log("not connected to db",err);
 })
 
 
